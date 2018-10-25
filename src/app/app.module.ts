@@ -10,6 +10,11 @@ import { AppRoutingModule } from './/app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
+  imports: [
+    BrowserModule,
+    FormsModule,
+    AppRoutingModule
+  ],
   declarations: [
     AppComponent,
     HeroesComponent,
@@ -17,12 +22,6 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     MessagesComponent,
     DashboardComponent
   ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    AppRoutingModule
-  ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
