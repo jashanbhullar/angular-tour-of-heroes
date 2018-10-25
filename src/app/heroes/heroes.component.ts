@@ -12,15 +12,10 @@ import { Observable } from 'rxjs';
 export class HeroesComponent implements OnInit {
 
   heroes: Observable<Hero[]>;
-  selectedHero: Hero;
   constructor(private heroService: HeroService) {   }
 
   ngOnInit() {
     this.heroes = this.heroService.getHeroes();
-  }
-
-  onSelect(hero: Hero): void {
-    this.selectedHero = hero;
   }
 
 }
